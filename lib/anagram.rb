@@ -7,7 +7,6 @@ class Anagram
   end
   def match(comparison_array)
     name_array = @name.split(//)
-    binding.pry
     matching_word = []
     comparison_array.each do |i|
       singular_word_array = i.split(//)
