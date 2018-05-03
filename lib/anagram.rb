@@ -9,7 +9,7 @@ class Anagram
     #I renamed it accordingly
     name_array = @name.split(//) #// are what you need to split a single word (regex)
     matching_word = []
-    comparison_array.each do |i|
+    comparison_array.each do |i| #splitting per each word in the array.
       singular_word_array = i.split(//)
       if singular_word_array.sort == name_array.sort
         matching_word << i
