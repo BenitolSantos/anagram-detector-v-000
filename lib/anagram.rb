@@ -9,7 +9,6 @@ class Anagram
     name_array = @name.split(//)
     binding.pry
     matching_word = []
-    compared_words = comparison.split(//)
     comparison_array.each do |i|
       singular_word_array = i.split(//)
       if singular_word_array.sort == name_array.sort
