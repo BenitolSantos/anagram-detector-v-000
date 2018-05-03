@@ -7,7 +7,7 @@ class Anagram
   end
   def match(comparison_array) #through pry I learned that match recieves an array!
     #I renamed it accordingly
-    name_array = @name.split(//)
+    name_array = @name.split(//) #// are what you need to split a single word (regex)
     matching_word = []
     comparison_array.each do |i|
       singular_word_array = i.split(//)
