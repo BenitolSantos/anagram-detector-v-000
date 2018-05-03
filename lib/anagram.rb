@@ -5,7 +5,8 @@ class Anagram
   def initialize(name)
     @name = name
   end
-  def match(comparison_array)
+  def match(comparison_array) #through pry I learned that match recieves an array!
+    #I renamed it accordingly
     name_array = @name.split(//)
     matching_word = []
     comparison_array.each do |i|
