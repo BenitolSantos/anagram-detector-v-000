@@ -6,6 +6,7 @@ class Anagram
   end
   def match(comparison)
     name_array = @name.split(//)
+    binding.pry
     matching_word = []
     compared_words = comparison.split(//)
     compared_words.each do |i|
